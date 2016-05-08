@@ -15,5 +15,5 @@ RUN python manage.py migrate
 
 VOLUME /home/data_dvf
 
-EXPOSE 8000
+EXPOSE 8000 5432
 CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
