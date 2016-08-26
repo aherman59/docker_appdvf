@@ -9,7 +9,7 @@ WORKDIR /usr/src/app
 RUN git clone https://github.com/aherman59/indvf.git
 WORKDIR /usr/src/app/indvf 
 RUN pip install --no-cache-dir -r requirements.txt
-RUN pip install django==1.9.5
+RUN pip install django>=1.9.6
 RUN mv db_init.sqlite3 db.sqlite3
 RUN python manage.py migrate
 
